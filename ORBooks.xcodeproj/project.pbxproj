@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1551CC801413B45D00472EBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551CC7F1413B45D00472EBA /* UIKit.framework */; };
+		1551CC821413B45D00472EBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551CC811413B45D00472EBA /* Foundation.framework */; };
+		1551CC841413B45D00472EBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551CC831413B45D00472EBA /* CoreGraphics.framework */; };
+		1551CC8A1413B45D00472EBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1551CC881413B45D00472EBA /* InfoPlist.strings */; };
+		1551CC8D1413B45D00472EBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551CC8C1413B45D00472EBA /* main.m */; };
+		1551CC901413B45D00472EBA /* ORBooksAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551CC8F1413B45D00472EBA /* ORBooksAppDelegate.m */; };
+		1551CC931413B45D00472EBA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1551CC911413B45D00472EBA /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1551CC7B1413B45D00472EBA /* ORBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ORBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1551CC7F1413B45D00472EBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1551CC811413B45D00472EBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1551CC831413B45D00472EBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1551CC871413B45D00472EBA /* ORBooks-Info.plist */ = {isa = PBXFileReference; path = "ORBooks-Info.plist"; sourceTree = "<group>"; };
+		1551CC891413B45D00472EBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1551CC8B1413B45D00472EBA /* ORBooks-Prefix.pch */ = {isa = PBXFileReference; path = "ORBooks-Prefix.pch"; sourceTree = "<group>"; };
+		1551CC8C1413B45D00472EBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1551CC8E1413B45D00472EBA /* ORBooksAppDelegate.h */ = {isa = PBXFileReference; path = ORBooksAppDelegate.h; sourceTree = "<group>"; };
+		1551CC8F1413B45D00472EBA /* ORBooksAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORBooksAppDelegate.m; sourceTree = "<group>"; };
+		1551CC921413B45D00472EBA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1551CC781413B45C00472EBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1551CC801413B45D00472EBA /* UIKit.framework in Frameworks */,
+				1551CC821413B45D00472EBA /* Foundation.framework in Frameworks */,
+				1551CC841413B45D00472EBA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1551CC701413B45B00472EBA = {
+			isa = PBXGroup;
+			children = (
+				1551CC851413B45D00472EBA /* ORBooks */,
+				1551CC7E1413B45D00472EBA /* Frameworks */,
+				1551CC7C1413B45D00472EBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1551CC7C1413B45D00472EBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1551CC7B1413B45D00472EBA /* ORBooks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1551CC7E1413B45D00472EBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1551CC7F1413B45D00472EBA /* UIKit.framework */,
+				1551CC811413B45D00472EBA /* Foundation.framework */,
+				1551CC831413B45D00472EBA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1551CC851413B45D00472EBA /* ORBooks */ = {
+			isa = PBXGroup;
+			children = (
+				1551CC8E1413B45D00472EBA /* ORBooksAppDelegate.h */,
+				1551CC8F1413B45D00472EBA /* ORBooksAppDelegate.m */,
+				1551CC911413B45D00472EBA /* MainWindow.xib */,
+				1551CC861413B45D00472EBA /* Supporting Files */,
+			);
+			path = ORBooks;
+			sourceTree = "<group>";
+		};
+		1551CC861413B45D00472EBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1551CC871413B45D00472EBA /* ORBooks-Info.plist */,
+				1551CC881413B45D00472EBA /* InfoPlist.strings */,
+				1551CC8B1413B45D00472EBA /* ORBooks-Prefix.pch */,
+				1551CC8C1413B45D00472EBA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1551CC7A1413B45C00472EBA /* ORBooks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1551CC961413B45D00472EBA /* Build configuration list for PBXNativeTarget "ORBooks" */;
+			buildPhases = (
+				1551CC771413B45C00472EBA /* Sources */,
+				1551CC781413B45C00472EBA /* Frameworks */,
+				1551CC791413B45C00472EBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ORBooks;
+			productName = ORBooks;
+			productReference = 1551CC7B1413B45D00472EBA /* ORBooks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1551CC721413B45B00472EBA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1551CC751413B45B00472EBA /* Build configuration list for PBXProject "ORBooks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1551CC701413B45B00472EBA;
+			productRefGroup = 1551CC7C1413B45D00472EBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1551CC7A1413B45C00472EBA /* ORBooks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1551CC791413B45C00472EBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1551CC8A1413B45D00472EBA /* InfoPlist.strings in Resources */,
+				1551CC931413B45D00472EBA /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1551CC771413B45C00472EBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1551CC8D1413B45D00472EBA /* main.m in Sources */,
+				1551CC901413B45D00472EBA /* ORBooksAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1551CC881413B45D00472EBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1551CC891413B45D00472EBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1551CC911413B45D00472EBA /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1551CC921413B45D00472EBA /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1551CC941413B45D00472EBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1551CC951413B45D00472EBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		1551CC971413B45D00472EBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ORBooks/ORBooks-Prefix.pch";
+				INFOPLIST_FILE = "ORBooks/ORBooks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1551CC981413B45D00472EBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ORBooks/ORBooks-Prefix.pch";
+				INFOPLIST_FILE = "ORBooks/ORBooks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1551CC751413B45B00472EBA /* Build configuration list for PBXProject "ORBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1551CC941413B45D00472EBA /* Debug */,
+				1551CC951413B45D00472EBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1551CC961413B45D00472EBA /* Build configuration list for PBXNativeTarget "ORBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1551CC971413B45D00472EBA /* Debug */,
+				1551CC981413B45D00472EBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1551CC721413B45B00472EBA /* Project object */;
+}
