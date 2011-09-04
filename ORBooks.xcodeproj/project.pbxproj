@@ -14,6 +14,8 @@
 		1551CC8D1413B45D00472EBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551CC8C1413B45D00472EBA /* main.m */; };
 		1551CC901413B45D00472EBA /* ORBooksAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551CC8F1413B45D00472EBA /* ORBooksAppDelegate.m */; };
 		1551CC931413B45D00472EBA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1551CC911413B45D00472EBA /* MainWindow.xib */; };
+		1551CC9A1413B57500472EBA /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = 1551CC991413B57500472EBA /* Time.png */; };
+		1551CC9C1413B57C00472EBA /* Hypno.png in Resources */ = {isa = PBXBuildFile; fileRef = 1551CC9B1413B57C00472EBA /* Hypno.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +23,15 @@
 		1551CC7F1413B45D00472EBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1551CC811413B45D00472EBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1551CC831413B45D00472EBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1551CC871413B45D00472EBA /* ORBooks-Info.plist */ = {isa = PBXFileReference; path = "ORBooks-Info.plist"; sourceTree = "<group>"; };
+		1551CC871413B45D00472EBA /* ORBooks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ORBooks-Info.plist"; sourceTree = "<group>"; };
 		1551CC891413B45D00472EBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1551CC8B1413B45D00472EBA /* ORBooks-Prefix.pch */ = {isa = PBXFileReference; path = "ORBooks-Prefix.pch"; sourceTree = "<group>"; };
+		1551CC8B1413B45D00472EBA /* ORBooks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ORBooks-Prefix.pch"; sourceTree = "<group>"; };
 		1551CC8C1413B45D00472EBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1551CC8E1413B45D00472EBA /* ORBooksAppDelegate.h */ = {isa = PBXFileReference; path = ORBooksAppDelegate.h; sourceTree = "<group>"; };
+		1551CC8E1413B45D00472EBA /* ORBooksAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORBooksAppDelegate.h; sourceTree = "<group>"; };
 		1551CC8F1413B45D00472EBA /* ORBooksAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORBooksAppDelegate.m; sourceTree = "<group>"; };
 		1551CC921413B45D00472EBA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		1551CC991413B57500472EBA /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
+		1551CC9B1413B57C00472EBA /* Hypno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hypno.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 		1551CC861413B45D00472EBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1551CC9B1413B57C00472EBA /* Hypno.png */,
+				1551CC991413B57500472EBA /* Time.png */,
 				1551CC871413B45D00472EBA /* ORBooks-Info.plist */,
 				1551CC881413B45D00472EBA /* InfoPlist.strings */,
 				1551CC8B1413B45D00472EBA /* ORBooks-Prefix.pch */,
@@ -142,6 +148,8 @@
 			files = (
 				1551CC8A1413B45D00472EBA /* InfoPlist.strings in Resources */,
 				1551CC931413B45D00472EBA /* MainWindow.xib in Resources */,
+				1551CC9A1413B57500472EBA /* Time.png in Resources */,
+				1551CC9C1413B57C00472EBA /* Hypno.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
