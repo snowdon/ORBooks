@@ -2,7 +2,7 @@
 //  BooksTableViewController.h
 //  ORBooks
 //
-//  Created by  Chuns on 11-9-4.
+//  Created by  Chuns on 11-9-5.
 //  Copyright 2011年 __MyCompanyName__. All rights reserved.
 //
 
@@ -13,6 +13,9 @@
 <UITableViewDelegate, UITableViewDataSource>
 {
     IBOutlet UITableView *booksTableView;
+    NSMutableArray *booksArray;
 }
+
+@property (nonatomic, retain) NSMutableArray *booksArray;
 
 @end

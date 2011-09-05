@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1523705A1414720000F1F9D0 /* BookTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 152370591414720000F1F9D0 /* BookTableView.xib */; };
+		152370601414746300F1F9D0 /* BooksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1523705E1414746200F1F9D0 /* BooksTableViewController.m */; };
+		152370611414746300F1F9D0 /* BooksTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1523705F1414746200F1F9D0 /* BooksTableViewController.xib */; };
 		1551CC801413B45D00472EBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551CC7F1413B45D00472EBA /* UIKit.framework */; };
 		1551CC821413B45D00472EBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551CC811413B45D00472EBA /* Foundation.framework */; };
 		1551CC841413B45D00472EBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551CC831413B45D00472EBA /* CoreGraphics.framework */; };
@@ -20,11 +21,12 @@
 		1551CCA01413B66200472EBA /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551CC9E1413B66200472EBA /* AboutViewController.m */; };
 		1551CCA11413B66200472EBA /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1551CC9F1413B66200472EBA /* AboutViewController.xib */; };
 		1551CCA41413B8A600472EBA /* BooksNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551CCA31413B8A600472EBA /* BooksNavController.m */; };
-		1551CCA71413B9B200472EBA /* BooksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551CCA61413B9B200472EBA /* BooksTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		152370591414720000F1F9D0 /* BookTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BookTableView.xib; path = ORBooks.xcodeproj/BookTableView.xib; sourceTree = SOURCE_ROOT; };
+		1523705D1414746200F1F9D0 /* BooksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksTableViewController.h; sourceTree = "<group>"; };
+		1523705E1414746200F1F9D0 /* BooksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksTableViewController.m; sourceTree = "<group>"; };
+		1523705F1414746200F1F9D0 /* BooksTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BooksTableViewController.xib; sourceTree = "<group>"; };
 		1551CC7B1413B45D00472EBA /* ORBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ORBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1551CC7F1413B45D00472EBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1551CC811413B45D00472EBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,8 +45,6 @@
 		1551CC9F1413B66200472EBA /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		1551CCA21413B8A600472EBA /* BooksNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksNavController.h; sourceTree = "<group>"; };
 		1551CCA31413B8A600472EBA /* BooksNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksNavController.m; sourceTree = "<group>"; };
-		1551CCA51413B9B200472EBA /* BooksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksTableViewController.h; sourceTree = "<group>"; };
-		1551CCA61413B9B200472EBA /* BooksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +97,9 @@
 				1551CC911413B45D00472EBA /* MainWindow.xib */,
 				1551CCA21413B8A600472EBA /* BooksNavController.h */,
 				1551CCA31413B8A600472EBA /* BooksNavController.m */,
-				1551CCA51413B9B200472EBA /* BooksTableViewController.h */,
-				1551CCA61413B9B200472EBA /* BooksTableViewController.m */,
-				152370591414720000F1F9D0 /* BookTableView.xib */,
+				1523705D1414746200F1F9D0 /* BooksTableViewController.h */,
+				1523705E1414746200F1F9D0 /* BooksTableViewController.m */,
+				1523705F1414746200F1F9D0 /* BooksTableViewController.xib */,
 				1551CC861413B45D00472EBA /* Supporting Files */,
 			);
 			path = ORBooks;
@@ -180,7 +180,7 @@
 				1551CC9A1413B57500472EBA /* Time.png in Resources */,
 				1551CC9C1413B57C00472EBA /* Hypno.png in Resources */,
 				1551CCA11413B66200472EBA /* AboutViewController.xib in Resources */,
-				1523705A1414720000F1F9D0 /* BookTableView.xib in Resources */,
+				152370611414746300F1F9D0 /* BooksTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +195,7 @@
 				1551CC901413B45D00472EBA /* ORBooksAppDelegate.m in Sources */,
 				1551CCA01413B66200472EBA /* AboutViewController.m in Sources */,
 				1551CCA41413B8A600472EBA /* BooksNavController.m in Sources */,
-				1551CCA71413B9B200472EBA /* BooksTableViewController.m in Sources */,
+				152370601414746300F1F9D0 /* BooksTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

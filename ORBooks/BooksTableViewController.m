@@ -2,7 +2,7 @@
 //  BooksTableViewController.m
 //  ORBooks
 //
-//  Created by  Chuns on 11-9-4.
+//  Created by  Chuns on 11-9-5.
 //  Copyright 2011年 __MyCompanyName__. All rights reserved.
 //
 
@@ -10,6 +10,7 @@
 
 
 @implementation BooksTableViewController
+@synthesize booksArray;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -38,6 +39,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.title = NSLocalizedString(@"Books", @"My favorite O'Reilly Books");
+    
+    NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"Head First Java", @"Head First iPhone", @"Head First Paint", nil];
+    
+    self.booksArray = array;
+    [array release];
+    
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -85,14 +94,14 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.booksArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -105,6 +114,8 @@
     }
     
     // Configure the cell...
+    NSUInteger row = [indexPath row];
+    cell.text = [booksArray objectAtIndex:row];
     
     return cell;
 }
