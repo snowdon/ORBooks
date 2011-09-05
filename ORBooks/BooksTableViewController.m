@@ -127,8 +127,10 @@
     // Configure the cell...
     NSUInteger row = [indexPath row];
   //  cell.text = [booksArray objectAtIndex:row];
-    UILabel *cellLabel = cell.textLabel;
-    cellLabel.text = [self.booksModel getBookTitleAtIndex:row];
+ //   UILabel *cellLabel = cell.textLabel;
+  //  cellLabel.text = [self.booksModel getBookTitleAtIndex:row];
+    
+    cell.textLabel.text = [self.booksModel getBookTitleAtIndex:row];
     
     return cell;
 }
@@ -197,7 +199,8 @@
     }
    // bookDetailViewController.title = [NSString stringWithFormat:@"%@", [booksModel getBookTitleAtIndex:row]];
     
-    bookDetailViewController.title = [NSString stringWithFormat:@"%@", [booksArray objectAtIndex:row]];
+  //  bookDetailViewController.title = [NSString stringWithFormat:@"%@", [booksArray objectAtIndex:row]];
+    bookDetailViewController.title = [NSString stringWithFormat:@"%@", [booksModel getBookTitleAtIndex:row]];
     
     [bookDetailViewController setIndexForBookImage:row];
     
