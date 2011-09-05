@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1523705A1414720000F1F9D0 /* BookTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 152370591414720000F1F9D0 /* BookTableView.xib */; };
 		1551CC801413B45D00472EBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551CC7F1413B45D00472EBA /* UIKit.framework */; };
 		1551CC821413B45D00472EBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551CC811413B45D00472EBA /* Foundation.framework */; };
 		1551CC841413B45D00472EBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551CC831413B45D00472EBA /* CoreGraphics.framework */; };
@@ -18,9 +19,12 @@
 		1551CC9C1413B57C00472EBA /* Hypno.png in Resources */ = {isa = PBXBuildFile; fileRef = 1551CC9B1413B57C00472EBA /* Hypno.png */; };
 		1551CCA01413B66200472EBA /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551CC9E1413B66200472EBA /* AboutViewController.m */; };
 		1551CCA11413B66200472EBA /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1551CC9F1413B66200472EBA /* AboutViewController.xib */; };
+		1551CCA41413B8A600472EBA /* BooksNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551CCA31413B8A600472EBA /* BooksNavController.m */; };
+		1551CCA71413B9B200472EBA /* BooksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551CCA61413B9B200472EBA /* BooksTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		152370591414720000F1F9D0 /* BookTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BookTableView.xib; path = ORBooks.xcodeproj/BookTableView.xib; sourceTree = SOURCE_ROOT; };
 		1551CC7B1413B45D00472EBA /* ORBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ORBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1551CC7F1413B45D00472EBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1551CC811413B45D00472EBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +41,10 @@
 		1551CC9D1413B66200472EBA /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		1551CC9E1413B66200472EBA /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		1551CC9F1413B66200472EBA /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		1551CCA21413B8A600472EBA /* BooksNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksNavController.h; sourceTree = "<group>"; };
+		1551CCA31413B8A600472EBA /* BooksNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksNavController.m; sourceTree = "<group>"; };
+		1551CCA51413B9B200472EBA /* BooksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksTableViewController.h; sourceTree = "<group>"; };
+		1551CCA61413B9B200472EBA /* BooksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +91,15 @@
 		1551CC851413B45D00472EBA /* ORBooks */ = {
 			isa = PBXGroup;
 			children = (
+				15DF93681413C60300D0AB10 /* About */,
 				1551CC8E1413B45D00472EBA /* ORBooksAppDelegate.h */,
 				1551CC8F1413B45D00472EBA /* ORBooksAppDelegate.m */,
 				1551CC911413B45D00472EBA /* MainWindow.xib */,
-				1551CC9D1413B66200472EBA /* AboutViewController.h */,
-				1551CC9E1413B66200472EBA /* AboutViewController.m */,
-				1551CC9F1413B66200472EBA /* AboutViewController.xib */,
+				1551CCA21413B8A600472EBA /* BooksNavController.h */,
+				1551CCA31413B8A600472EBA /* BooksNavController.m */,
+				1551CCA51413B9B200472EBA /* BooksTableViewController.h */,
+				1551CCA61413B9B200472EBA /* BooksTableViewController.m */,
+				152370591414720000F1F9D0 /* BookTableView.xib */,
 				1551CC861413B45D00472EBA /* Supporting Files */,
 			);
 			path = ORBooks;
@@ -105,6 +116,16 @@
 				1551CC8C1413B45D00472EBA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15DF93681413C60300D0AB10 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				1551CC9D1413B66200472EBA /* AboutViewController.h */,
+				1551CC9E1413B66200472EBA /* AboutViewController.m */,
+				1551CC9F1413B66200472EBA /* AboutViewController.xib */,
+			);
+			name = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +180,7 @@
 				1551CC9A1413B57500472EBA /* Time.png in Resources */,
 				1551CC9C1413B57C00472EBA /* Hypno.png in Resources */,
 				1551CCA11413B66200472EBA /* AboutViewController.xib in Resources */,
+				1523705A1414720000F1F9D0 /* BookTableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +194,8 @@
 				1551CC8D1413B45D00472EBA /* main.m in Sources */,
 				1551CC901413B45D00472EBA /* ORBooksAppDelegate.m in Sources */,
 				1551CCA01413B66200472EBA /* AboutViewController.m in Sources */,
+				1551CCA41413B8A600472EBA /* BooksNavController.m in Sources */,
+				1551CCA71413B9B200472EBA /* BooksTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +300,7 @@
 				1551CC981413B45D00472EBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

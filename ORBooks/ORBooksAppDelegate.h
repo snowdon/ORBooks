@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class BooksNavController;
 
 @interface ORBooksAppDelegate : NSObject <UIApplicationDelegate> {
     IBOutlet UITabBarController *rootController;
+    IBOutlet BooksNavController *booksNavController;
 
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *rootController;
+@property (nonatomic, retain) IBOutlet BooksNavController *booksNavController;
 @end
