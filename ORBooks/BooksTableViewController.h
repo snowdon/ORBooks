@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class BookDetailViewController;
 
 
 @interface BooksTableViewController : UITableViewController 
@@ -14,8 +15,10 @@
 {
     IBOutlet UITableView *booksTableView;
     NSMutableArray *booksArray;
+    BookDetailViewController *bookDetailViewController;
 }
 
 @property (nonatomic, retain) NSMutableArray *booksArray;
+@property (nonatomic, retain) BookDetailViewController *bookDetailViewController;
 
 @end

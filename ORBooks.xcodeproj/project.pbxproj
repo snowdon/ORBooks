@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		152370601414746300F1F9D0 /* BooksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1523705E1414746200F1F9D0 /* BooksTableViewController.m */; };
 		152370611414746300F1F9D0 /* BooksTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1523705F1414746200F1F9D0 /* BooksTableViewController.xib */; };
+		1523706D14147DEA00F1F9D0 /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1523706B14147DEA00F1F9D0 /* BookDetailViewController.m */; };
+		1523706E14147DEA00F1F9D0 /* BookDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1523706C14147DEA00F1F9D0 /* BookDetailViewController.xib */; };
 		1551CC801413B45D00472EBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551CC7F1413B45D00472EBA /* UIKit.framework */; };
 		1551CC821413B45D00472EBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551CC811413B45D00472EBA /* Foundation.framework */; };
 		1551CC841413B45D00472EBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551CC831413B45D00472EBA /* CoreGraphics.framework */; };
@@ -27,6 +29,9 @@
 		1523705D1414746200F1F9D0 /* BooksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksTableViewController.h; sourceTree = "<group>"; };
 		1523705E1414746200F1F9D0 /* BooksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksTableViewController.m; sourceTree = "<group>"; };
 		1523705F1414746200F1F9D0 /* BooksTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BooksTableViewController.xib; sourceTree = "<group>"; };
+		1523706A14147DEA00F1F9D0 /* BookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookDetailViewController.h; path = ../BookDetailViewController.h; sourceTree = "<group>"; };
+		1523706B14147DEA00F1F9D0 /* BookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookDetailViewController.m; path = ../BookDetailViewController.m; sourceTree = "<group>"; };
+		1523706C14147DEA00F1F9D0 /* BookDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BookDetailViewController.xib; path = ../BookDetailViewController.xib; sourceTree = "<group>"; };
 		1551CC7B1413B45D00472EBA /* ORBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ORBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1551CC7F1413B45D00472EBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1551CC811413B45D00472EBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +105,9 @@
 				1523705D1414746200F1F9D0 /* BooksTableViewController.h */,
 				1523705E1414746200F1F9D0 /* BooksTableViewController.m */,
 				1523705F1414746200F1F9D0 /* BooksTableViewController.xib */,
+				1523706A14147DEA00F1F9D0 /* BookDetailViewController.h */,
+				1523706B14147DEA00F1F9D0 /* BookDetailViewController.m */,
+				1523706C14147DEA00F1F9D0 /* BookDetailViewController.xib */,
 				1551CC861413B45D00472EBA /* Supporting Files */,
 			);
 			path = ORBooks;
@@ -181,6 +189,7 @@
 				1551CC9C1413B57C00472EBA /* Hypno.png in Resources */,
 				1551CCA11413B66200472EBA /* AboutViewController.xib in Resources */,
 				152370611414746300F1F9D0 /* BooksTableViewController.xib in Resources */,
+				1523706E14147DEA00F1F9D0 /* BookDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +205,7 @@
 				1551CCA01413B66200472EBA /* AboutViewController.m in Sources */,
 				1551CCA41413B8A600472EBA /* BooksNavController.m in Sources */,
 				152370601414746300F1F9D0 /* BooksTableViewController.m in Sources */,
+				1523706D14147DEA00F1F9D0 /* BookDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

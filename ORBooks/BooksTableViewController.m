@@ -7,10 +7,12 @@
 //
 
 #import "BooksTableViewController.h"
-
+#import "BookDetailViewController.h"
+#import "ORBooksAppDelegate.h"
 
 @implementation BooksTableViewController
 @synthesize booksArray;
+@synthesize bookDetailViewController;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -171,6 +173,21 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+    NSInteger row = [indexPath row];
+    if (self.bookDetailViewController == nil)
+    {
+        BookDetailViewController *aBookDetail = [[BookDetailViewController alloc] 
+                                                 initWithNibName:@"BookDetailViewController" bundle:nil];
+        self.bookDetailViewController = aBookDetail;
+        [aBookDetail release];
+        
+        
+    }
+    bookDetailViewController .title = [NSString stringWithFormat:@"%@", [booksArray objectAtIndex:row]];
+    
+    ORBooksAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    
+    [delegate.booksNavController pushViewController:bookDetailViewController animated:YES];
 }
 
 @end
