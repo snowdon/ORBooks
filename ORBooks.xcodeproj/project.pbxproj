@@ -23,6 +23,10 @@
 		1551CCA01413B66200472EBA /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551CC9E1413B66200472EBA /* AboutViewController.m */; };
 		1551CCA11413B66200472EBA /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1551CC9F1413B66200472EBA /* AboutViewController.xib */; };
 		1551CCA41413B8A600472EBA /* BooksNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551CCA31413B8A600472EBA /* BooksNavController.m */; };
+		158AD77B14149A6A008DDC3C /* BooksModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 158AD77A14149A6A008DDC3C /* BooksModel.m */; };
+		158AD78014149CAE008DDC3C /* avator1.png in Resources */ = {isa = PBXBuildFile; fileRef = 158AD77D14149CAE008DDC3C /* avator1.png */; };
+		158AD78114149CAE008DDC3C /* avator2.png in Resources */ = {isa = PBXBuildFile; fileRef = 158AD77E14149CAE008DDC3C /* avator2.png */; };
+		158AD78214149CAE008DDC3C /* avator3.png in Resources */ = {isa = PBXBuildFile; fileRef = 158AD77F14149CAE008DDC3C /* avator3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,11 @@
 		1551CC9F1413B66200472EBA /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		1551CCA21413B8A600472EBA /* BooksNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksNavController.h; sourceTree = "<group>"; };
 		1551CCA31413B8A600472EBA /* BooksNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksNavController.m; sourceTree = "<group>"; };
+		158AD77914149A6A008DDC3C /* BooksModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksModel.h; sourceTree = "<group>"; };
+		158AD77A14149A6A008DDC3C /* BooksModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksModel.m; sourceTree = "<group>"; };
+		158AD77D14149CAE008DDC3C /* avator1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avator1.png; sourceTree = "<group>"; };
+		158AD77E14149CAE008DDC3C /* avator2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avator2.png; sourceTree = "<group>"; };
+		158AD77F14149CAE008DDC3C /* avator3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avator3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +117,8 @@
 				1523706A14147DEA00F1F9D0 /* BookDetailViewController.h */,
 				1523706B14147DEA00F1F9D0 /* BookDetailViewController.m */,
 				1523706C14147DEA00F1F9D0 /* BookDetailViewController.xib */,
+				158AD77914149A6A008DDC3C /* BooksModel.h */,
+				158AD77A14149A6A008DDC3C /* BooksModel.m */,
 				1551CC861413B45D00472EBA /* Supporting Files */,
 			);
 			path = ORBooks;
@@ -116,6 +127,9 @@
 		1551CC861413B45D00472EBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				158AD77D14149CAE008DDC3C /* avator1.png */,
+				158AD77E14149CAE008DDC3C /* avator2.png */,
+				158AD77F14149CAE008DDC3C /* avator3.png */,
 				1551CC9B1413B57C00472EBA /* Hypno.png */,
 				1551CC991413B57500472EBA /* Time.png */,
 				1551CC871413B45D00472EBA /* ORBooks-Info.plist */,
@@ -190,6 +204,9 @@
 				1551CCA11413B66200472EBA /* AboutViewController.xib in Resources */,
 				152370611414746300F1F9D0 /* BooksTableViewController.xib in Resources */,
 				1523706E14147DEA00F1F9D0 /* BookDetailViewController.xib in Resources */,
+				158AD78014149CAE008DDC3C /* avator1.png in Resources */,
+				158AD78114149CAE008DDC3C /* avator2.png in Resources */,
+				158AD78214149CAE008DDC3C /* avator3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +223,7 @@
 				1551CCA41413B8A600472EBA /* BooksNavController.m in Sources */,
 				152370601414746300F1F9D0 /* BooksTableViewController.m in Sources */,
 				1523706D14147DEA00F1F9D0 /* BookDetailViewController.m in Sources */,
+				158AD77B14149A6A008DDC3C /* BooksModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

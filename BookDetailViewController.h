@@ -8,9 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@class BooksModel;
 
 @interface BookDetailViewController : UIViewController {
+    UIImageView *bookImageView;
+    BooksModel *booksModel;
+    int bookIndex;
     
 }
+
+@property (nonatomic, retain)IBOutlet UIImageView *bookImageView;
+@property (nonatomic, retain)BooksModel *booksModel;
+
+- (void)setIndexForBookImage:(int)index;
 
 @end

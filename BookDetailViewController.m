@@ -7,9 +7,24 @@
 //
 
 #import "BookDetailViewController.h"
-
+#import "BooksModel.h"
 
 @implementation BookDetailViewController
+
+@synthesize bookImageView;
+@synthesize booksModel;
+
+- (void)setIndexForBookImage:(int)index
+{
+    bookIndex = index;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    bookImageView.image = [booksModel getBookImageAtIndex:bookIndex];
+    [super viewWillAppear:animated];
+     
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

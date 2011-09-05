@@ -9,10 +9,12 @@
 #import "BooksTableViewController.h"
 #import "BookDetailViewController.h"
 #import "ORBooksAppDelegate.h"
+#import "BooksModel.h"
 
 @implementation BooksTableViewController
 @synthesize booksArray;
 @synthesize bookDetailViewController;
+@synthesize booksModel;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -44,10 +46,15 @@
     
     self.title = NSLocalizedString(@"Books", @"My favorite O'Reilly Books");
     
-    NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"Head First Java", @"Head First iPhone", @"Head First Paint", nil];
+    BooksModel *tmpBooksModel = [[BooksModel alloc] init];
+    self.booksModel = tmpBooksModel;
+    [tmpBooksModel release];
     
-    self.booksArray = array;
-    [array release];
+    
+  //  NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"Head First Java", @"Head First iPhone", @"Head First Paint", nil];
+    
+  //  self.booksArray = array;
+   // [array release];
     
 
     // Uncomment the following line to preserve selection between presentations.
@@ -103,7 +110,9 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [self.booksArray count];
+   // return [self.booksArray count];
+    return [self.booksModel getNumberOfBooks];
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -117,7 +126,9 @@
     
     // Configure the cell...
     NSUInteger row = [indexPath row];
-    cell.text = [booksArray objectAtIndex:row];
+  //  cell.text = [booksArray objectAtIndex:row];
+    UILabel *cellLabel = cell.textLabel;
+    cellLabel.text = [self.booksModel getBookTitleAtIndex:row];
     
     return cell;
 }
@@ -180,14 +191,21 @@
                                                  initWithNibName:@"BookDetailViewController" bundle:nil];
         self.bookDetailViewController = aBookDetail;
         [aBookDetail release];
+        bookDetailViewController.booksModel = self.booksModel;
         
         
     }
-    bookDetailViewController .title = [NSString stringWithFormat:@"%@", [booksArray objectAtIndex:row]];
+   // bookDetailViewController.title = [NSString stringWithFormat:@"%@", [booksModel getBookTitleAtIndex:row]];
     
-    ORBooksAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    bookDetailViewController.title = [NSString stringWithFormat:@"%@", [booksArray objectAtIndex:row]];
     
-    [delegate.booksNavController pushViewController:bookDetailViewController animated:YES];
+    [bookDetailViewController setIndexForBookImage:row];
+    
+    [self.navigationController pushViewController:bookDetailViewController animated:YES];
+    
+  //  ORBooksAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    
+    //[delegate.booksNavController pushViewController:bookDetailViewController animated:YES];
 }
 
 @end
