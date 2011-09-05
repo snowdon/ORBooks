@@ -11,6 +11,8 @@
 
 @implementation LineupTableViewController
 
+@synthesize lineupsArray;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -38,6 +40,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.title = NSLocalizedString(@"Lineups", @"My favorite lineup");
+    
+    NSMutableArray *array = [[NSArray alloc] initWithObjects:@"Chuns", @"Xia", @"Qiu", nil];
+    self.lineupsArray = array;
+    [array release];
+    
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -85,14 +94,14 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.lineupsArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -105,6 +114,8 @@
     }
     
     // Configure the cell...
+    NSUInteger row = [indexPath row];
+    cell.text = [lineupsArray objectAtIndex:row];
     
     return cell;
 }

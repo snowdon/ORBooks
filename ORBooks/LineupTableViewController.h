@@ -13,6 +13,9 @@
 <UITableViewDelegate, UITableViewDataSource>
 {
     IBOutlet UITableView *lineupTableView;
+    IBOutlet NSMutableArray *lineupsArray;
 }
+
+@property (nonatomic, retain) NSMutableArray *lineupsArray;
 
 @end
