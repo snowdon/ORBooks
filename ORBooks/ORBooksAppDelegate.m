@@ -8,6 +8,7 @@
 
 #import "ORBooksAppDelegate.h"
 #import "BooksNavController.h"
+#import "LineupNavController.h"
 
 @implementation ORBooksAppDelegate
 
@@ -15,6 +16,8 @@
 @synthesize window=_window;
 @synthesize rootController;
 @synthesize booksNavController;
+@synthesize lineupNavController;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -67,6 +70,7 @@
 {
     [rootController release];
     [booksNavController release];
+    [lineupNavController release];
     [_window release];
     [super dealloc];
 }

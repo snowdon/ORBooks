@@ -27,6 +27,9 @@
 		158AD78014149CAE008DDC3C /* avator1.png in Resources */ = {isa = PBXBuildFile; fileRef = 158AD77D14149CAE008DDC3C /* avator1.png */; };
 		158AD78114149CAE008DDC3C /* avator2.png in Resources */ = {isa = PBXBuildFile; fileRef = 158AD77E14149CAE008DDC3C /* avator2.png */; };
 		158AD78214149CAE008DDC3C /* avator3.png in Resources */ = {isa = PBXBuildFile; fileRef = 158AD77F14149CAE008DDC3C /* avator3.png */; };
+		158AD79D1414C5BA008DDC3C /* LineupNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158AD79C1414C5BA008DDC3C /* LineupNavController.m */; };
+		158AD7A71414C7CC008DDC3C /* LineupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158AD7A51414C7CC008DDC3C /* LineupTableViewController.m */; };
+		158AD7A81414C7CC008DDC3C /* LineupTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158AD7A61414C7CC008DDC3C /* LineupTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,11 @@
 		158AD77D14149CAE008DDC3C /* avator1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avator1.png; sourceTree = "<group>"; };
 		158AD77E14149CAE008DDC3C /* avator2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avator2.png; sourceTree = "<group>"; };
 		158AD77F14149CAE008DDC3C /* avator3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avator3.png; sourceTree = "<group>"; };
+		158AD79B1414C5BA008DDC3C /* LineupNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineupNavController.h; sourceTree = "<group>"; };
+		158AD79C1414C5BA008DDC3C /* LineupNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineupNavController.m; sourceTree = "<group>"; };
+		158AD7A41414C7CC008DDC3C /* LineupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineupTableViewController.h; sourceTree = "<group>"; };
+		158AD7A51414C7CC008DDC3C /* LineupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineupTableViewController.m; sourceTree = "<group>"; };
+		158AD7A61414C7CC008DDC3C /* LineupTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineupTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,11 @@
 				1523706C14147DEA00F1F9D0 /* BookDetailViewController.xib */,
 				158AD77914149A6A008DDC3C /* BooksModel.h */,
 				158AD77A14149A6A008DDC3C /* BooksModel.m */,
+				158AD79B1414C5BA008DDC3C /* LineupNavController.h */,
+				158AD79C1414C5BA008DDC3C /* LineupNavController.m */,
+				158AD7A41414C7CC008DDC3C /* LineupTableViewController.h */,
+				158AD7A51414C7CC008DDC3C /* LineupTableViewController.m */,
+				158AD7A61414C7CC008DDC3C /* LineupTableViewController.xib */,
 				1551CC861413B45D00472EBA /* Supporting Files */,
 			);
 			path = ORBooks;
@@ -207,6 +220,7 @@
 				158AD78014149CAE008DDC3C /* avator1.png in Resources */,
 				158AD78114149CAE008DDC3C /* avator2.png in Resources */,
 				158AD78214149CAE008DDC3C /* avator3.png in Resources */,
+				158AD7A81414C7CC008DDC3C /* LineupTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +238,8 @@
 				152370601414746300F1F9D0 /* BooksTableViewController.m in Sources */,
 				1523706D14147DEA00F1F9D0 /* BookDetailViewController.m in Sources */,
 				158AD77B14149A6A008DDC3C /* BooksModel.m in Sources */,
+				158AD79D1414C5BA008DDC3C /* LineupNavController.m in Sources */,
+				158AD7A71414C7CC008DDC3C /* LineupTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
