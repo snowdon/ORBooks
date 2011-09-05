@@ -7,11 +7,14 @@
 //
 
 #import "LineupTableViewController.h"
-
+#import "LineupDetailViewController.h"
+#import "ORBooksAppDelegate.h"
 
 @implementation LineupTableViewController
 
 @synthesize lineupsArray;
+@synthesize lineupDetailViewController;
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -171,6 +174,25 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+    NSUInteger row = [indexPath row];
+    if (self.lineupDetailViewController == nil)
+    {
+             
+        LineupDetailViewController *aLineupDetail = [[LineupDetailViewController alloc] 
+                                                 initWithNibName:@"LineupDetailViewController" bundle:nil];
+        self.lineupDetailViewController = aLineupDetail;
+        
+        
+        
+        [aLineupDetail release];
+    }
+    lineupDetailViewController.title = [NSString stringWithFormat:@"%@", [lineupsArray objectAtIndex:row]];
+    
+    ORBooksAppDelegate  *delegate = [[UIApplication sharedApplication] delegate];
+    [delegate.lineupNavController pushViewController:lineupDetailViewController animated:YES];
+  //  [self.navigationController pushViewController:lineupDetailViewController animated:YES];
+
+    
 }
 
 @end

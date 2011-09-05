@@ -30,6 +30,8 @@
 		158AD79D1414C5BA008DDC3C /* LineupNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158AD79C1414C5BA008DDC3C /* LineupNavController.m */; };
 		158AD7A71414C7CC008DDC3C /* LineupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158AD7A51414C7CC008DDC3C /* LineupTableViewController.m */; };
 		158AD7A81414C7CC008DDC3C /* LineupTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158AD7A61414C7CC008DDC3C /* LineupTableViewController.xib */; };
+		158AD7AC1414CCD7008DDC3C /* LineupDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158AD7AA1414CCD6008DDC3C /* LineupDetailViewController.m */; };
+		158AD7AD1414CCD7008DDC3C /* LineupDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158AD7AB1414CCD6008DDC3C /* LineupDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,9 @@
 		158AD7A41414C7CC008DDC3C /* LineupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineupTableViewController.h; sourceTree = "<group>"; };
 		158AD7A51414C7CC008DDC3C /* LineupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineupTableViewController.m; sourceTree = "<group>"; };
 		158AD7A61414C7CC008DDC3C /* LineupTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineupTableViewController.xib; sourceTree = "<group>"; };
+		158AD7A91414CCD6008DDC3C /* LineupDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineupDetailViewController.h; sourceTree = "<group>"; };
+		158AD7AA1414CCD6008DDC3C /* LineupDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineupDetailViewController.m; sourceTree = "<group>"; };
+		158AD7AB1414CCD6008DDC3C /* LineupDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineupDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +137,9 @@
 				158AD7A41414C7CC008DDC3C /* LineupTableViewController.h */,
 				158AD7A51414C7CC008DDC3C /* LineupTableViewController.m */,
 				158AD7A61414C7CC008DDC3C /* LineupTableViewController.xib */,
+				158AD7A91414CCD6008DDC3C /* LineupDetailViewController.h */,
+				158AD7AA1414CCD6008DDC3C /* LineupDetailViewController.m */,
+				158AD7AB1414CCD6008DDC3C /* LineupDetailViewController.xib */,
 				1551CC861413B45D00472EBA /* Supporting Files */,
 			);
 			path = ORBooks;
@@ -221,6 +229,7 @@
 				158AD78114149CAE008DDC3C /* avator2.png in Resources */,
 				158AD78214149CAE008DDC3C /* avator3.png in Resources */,
 				158AD7A81414C7CC008DDC3C /* LineupTableViewController.xib in Resources */,
+				158AD7AD1414CCD7008DDC3C /* LineupDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +249,7 @@
 				158AD77B14149A6A008DDC3C /* BooksModel.m in Sources */,
 				158AD79D1414C5BA008DDC3C /* LineupNavController.m in Sources */,
 				158AD7A71414C7CC008DDC3C /* LineupTableViewController.m in Sources */,
+				158AD7AC1414CCD7008DDC3C /* LineupDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
